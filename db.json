@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "name": "Narendra",
+      "profile": "/assest/avatar-1.svg",
+      "gender": "Male",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "90000",
+      "startDate": "17 Oct 2013",
+      "notes": "",
+      "id": "3qwJhreNINc"
+    },
+    {
+      "name": "Sahil",
+      "profile": "/assest/avatar-1.svg",
+      "gender": "Male",
+      "department": [
+        "HR",
+        "Finance"
+      ],
+      "salary": "100000",
+      "startDate": "17 Oct 2012",
+      "notes": "",
+      "id": "jBg23jHVs9E"
+    },
+    {
+      "name": "Sandesh",
+      "profile": "/assest/avatar-1.svg",
+      "gender": "Male",
+      "department": [
+        "HR",
+        "Finance"
+      ],
+      "salary": "80000",
+      "startDate": "17 Nov 2017",
+      "notes": "",
+      "id": "WeXqpvDgHh8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

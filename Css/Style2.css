@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, body * {
+    font-family: "Segoe UI", Arial, sans-serif !important;
+}
+
+body {
+    background-color: #f7f7f7 !important;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+#logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+}
+
+#h1 h3 {
+    color: #82b366;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#h2 h3 {
+    color: #3d5f2f;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.formContainer {
+    width: 50%;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.formContainer h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 18px;
+}
+
+
+.form-group > label:first-child {
+    width: 150px;
+    font-size: 14px;
+    color: #555;
+    padding-top: 8px;
+}
+
+
+.input-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container input[type="text"],
+.input-container select,
+.input-container textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.error-msg {
+    color: #d93025;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+    min-height: 16px;
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+.profile-images {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.profile-images label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+
+.profile-images input[type="radio"] {
+    accent-color: #82b366;
+    cursor: pointer;
+}
+
+
+.profile-images img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+
+.profile-images input[type="radio"]:checked + img {
+    outline: 2px solid #82b366;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #82b366;
+    cursor: pointer;
+}
+
+
+.form-group label:not(:first-child) {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+
+.date-selects {
+    display: flex;
+    gap: 10px;
+}
+
+.date-selects select {
+    width: 100px;
+}
+
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.form-actions button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+ .form-actions button[type="submit"] {
+    background-color: #00000029;
+    color: white;
+}
+.form-actions button[type="submit"]:hover{
+    background-color: #82A70C;
+    opacity: 1;
+}
+
+.form-actions button[type="reset"] {
+    background-color: #00000029;
+    color: white;
+}
+.form-actions button[type="reset"]:hover{
+    background-color: #707070;
+    opacity: 1;
+}
+
+#cancel button{
+    background-color: #00000029;
+    color: white;
+}
+#cancel button:hover{
+     background-color: #707070;
+    opacity: 1;
+}
+#notes {
+    width: 100%;
+    max-width: 500px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: none; 
+    outline: none;
+}
+@media (max-width: 768px) {
+
+    .formContainer {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group > label:first-child {
+        width: 100%;
+        margin-bottom: 5px;
+        padding-top: 0;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input-container input[type="text"],
+    .input-container select,
+    .input-container textarea {
+        width: 100%;
+    }
+
+    .date-selects {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .date-selects select {
+        flex: 1;
+        min-width: 80px;
+        width: 100%;
+    }
+
+    .profile-images {
+        flex-wrap: wrap;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}

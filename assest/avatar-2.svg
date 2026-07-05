@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="60" fill="#E3F2FD" />
+  <!-- Face -->
+  <ellipse cx="60" cy="58" rx="21" ry="25" fill="#FFE082" />
+  <!-- Hair -->
+  <path d="M39,45 Q50,30 65,32 Q75,34 81,45 C85,38 78,28 60,28 C45,28 37,38 39,45 Z" fill="#4E342E" />
+  <path d="M39,45 C38,55 36,60 38,65 Q39,58 41,50 Z" fill="#4E342E" />
+  <path d="M81,45 C82,55 84,60 82,65 Q81,58 79,50 Z" fill="#4E342E" />
+  <!-- Eyes -->
+  <circle cx="52" cy="56" r="2.5" fill="#3E2723" />
+  <circle cx="68" cy="56" r="2.5" fill="#3E2723" />
+  <!-- Smile -->
+  <path d="M55,68 Q60,72 65,68" stroke="#3E2723" stroke-width="2" fill="none" stroke-linecap="round" />
+  <!-- Shoulders / Clothes -->
+  <path d="M25,110 C25,93 40,86 60,86 C80,86 95,93 95,110 Z" fill="#1565C0" />
+</svg>

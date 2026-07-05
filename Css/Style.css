@@ -1,0 +1,280 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, body * {
+    font-family: "Segoe UI", Arial, sans-serif !important;
+}
+
+body {
+    background-color: #f4f6f8 !important;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+#logo img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+}
+
+#h1 h3 {
+    color: #82b366;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#h2 h3 {
+    color: #3d5f2f;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#container {
+    width: 70%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+#mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#banner h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+#search {
+    display: flex;
+    align-items: center;
+}
+#As{
+    display: flex;
+    gap: 10px;
+}
+
+.searchbox {
+    position: relative;
+    width: 40px; 
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+    overflow: hidden;
+    justify-content:left;
+}
+.searchbox img {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 5px;
+}
+
+/* EXPAND ON ACTIVE */
+.searchbox.active {
+    width: 250px;
+    padding-left: 10px;
+}
+
+
+/* INPUT */
+.searchbox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 14px;
+    display: none;
+}
+
+
+.searchbox.active input {
+    display: block;
+}
+
+#Add\ button button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #82A70C;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#Add\ button img {
+    width: 18px;
+}
+
+#Add\ button a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+thead {
+    background-color: #3f4d5a;
+}
+
+th {
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+}
+
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+td:first-child {
+    display: flex;
+    align-items: center;
+}
+
+td img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.tag {
+    background-color: #E9FEA5;
+    color: #3D3D3D;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+
+.edit, .delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit {
+    color: #2196f3;
+}
+
+.delete {
+    color: #f44336;
+}
+
+@media (max-width: 1024px) {
+    #container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #search input {
+        width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .header {
+        padding: 10px 20px;
+    }
+
+    
+    #container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #mainHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    #As {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+   
+    #search {
+        width: 100%;
+    }
+
+    #search input {
+        width: 100%;
+    }
+
+    .searchbox.active {
+        width: 100%;
+    }
+
+   
+    #Add\ button {
+        width: 100%;
+    }
+
+    #Add\ button button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+    table {
+        display: block;
+        overflow-x: auto; 
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}
